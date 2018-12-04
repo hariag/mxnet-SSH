@@ -4,7 +4,7 @@ import sys
 import numpy as np
 import datetime
 #sys.path.append('.')
-from ssh_detector import SSHDetector
+from test_ssh import SSHDetector
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
