@@ -24,3 +24,10 @@ python train_ssh.py
 ```
 
 For more information, check our insightface repository.
+
+
+
+### Test
+```
+python test.py
+```
