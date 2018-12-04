@@ -227,6 +227,10 @@ def train_net(args, ctx, pretrained, epoch, prefix, begin_epoch, end_epoch,
           opt.lr *= 0.1
           print('lr change to', opt.lr,' in batch', mbatch, file=sys.stderr)
           break
+        
+      if mbatch % 1000 ==0:                                                                                                                                                                                                
+        print('saving final checkpoint', mbatch, file=sys.stderr)                                                                                                                                                          
+        save_model(mbatch)
 
       if mbatch==lr_iters[-1]:
         print('saving final checkpoint', mbatch, file=sys.stderr)
